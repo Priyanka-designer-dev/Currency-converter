@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: currency-converter
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: CURRENCY_API_KEY
+        value: 44b4efb5425e42c12a16894c
